@@ -1,4 +1,5 @@
 import { capitalizeFirstLetter } from '../../utils/helpers';
+import Project from '../Project';
 import photo from '../../assets/img/small/react-logo.png';
 
 function Portfolio() {
@@ -14,6 +15,7 @@ function Portfolio() {
       <div className="flex-row">
         <img src={photo} alt="React Logo" className="img-thumbnail mx-1" />
       </div>
+      <Project />
     </section>
   );
 }
