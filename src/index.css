@@ -16,8 +16,8 @@ main {
   --spacing-five: calc(2.5rem);
 }
 
+/* color scheme */
 /* https://color.adobe.com/search?q=green */
-
 * {
   box-sizing: border-box;
 }
@@ -294,7 +294,7 @@ a {
 }
 
 .navActive {
-  color: var(--secondary);
+  background-color: var(--secondary);
 }
 
 footer {
