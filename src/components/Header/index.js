@@ -2,18 +2,25 @@ import PropTypes from 'prop-types';
 import Navigation from '../Navigation';
 
 function Header(props) {
-  const { contactSelected, setContactSelected } = props;
+  const { setAboutSelected, setContactSelected, setPortfolioSelected, setResumeSelected } = props;
 
   return (
     <header>
-      <Navigation contactSelected={contactSelected} setContactSelected={setContactSelected} />
+      <Navigation
+        setAboutSelected={setAboutSelected}
+        setContactSelected={setContactSelected}
+        setPortfolioSelected={setPortfolioSelected}
+        setResumeSelected={setResumeSelected}
+      />
     </header>
   );
 }
 
 Header.propTypes = {
-  contactSelected: PropTypes.bool,
+  setAboutSelected: PropTypes.func,
   setContactSelected: PropTypes.func,
+  setPortfolioSelected: PropTypes.func,
+  setResumeSelected: PropTypes.func,
 };
 
 export default Header;
