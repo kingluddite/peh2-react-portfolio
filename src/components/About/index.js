@@ -1,7 +1,10 @@
+import tbl from '../../assets/img/small/tim-berners-lee.jpeg';
+
 function About() {
   return (
     <section>
       <h1>About Me</h1>
+      <img src={tbl} alt="tim berners lee" />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ullam fuga inventore doloremque nemo
         tenetur laboriosam explicabo, veritatis atque quam iure reiciendis a ratione cumque sapiente repellendus illo
