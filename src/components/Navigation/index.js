@@ -21,7 +21,7 @@ function Navigation(props) {
     <nav>
       <h1>My React Portfolio</h1>
       <ul className="flex-row">
-        <li className="mx-2">
+        <li className={`mx-1 ${currentPage.name === 'about' && 'navActive'}`}>
           <button
             type="button"
             onClick={() => {
@@ -35,7 +35,7 @@ function Navigation(props) {
             About Me
           </button>
         </li>
-        <li className="mx-2">
+        <li className={`mx-1 ${currentPage.name === 'portfolio' && 'navActive'}`}>
           <button
             type="button"
             onClick={() => {
@@ -49,7 +49,7 @@ function Navigation(props) {
             Portfolio
           </button>
         </li>
-        <li className="mx-2">
+        <li className={`mx-1 ${currentPage.name === 'contact' && 'navActive'}`}>
           <button
             type="button"
             onClick={() => {
@@ -63,7 +63,7 @@ function Navigation(props) {
             Contact
           </button>
         </li>
-        <li className="mx-2">
+        <li className={`mx-1 ${currentPage.name === 'resume' && 'navActive'}`}>
           <button
             type="button"
             onClick={() => {
