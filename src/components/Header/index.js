@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Navigation from '../Navigation';
 
 function Header(props) {
@@ -9,5 +10,10 @@ function Header(props) {
     </header>
   );
 }
+
+Header.propTypes = {
+  contactSelected: PropTypes.bool,
+  setContactSelected: PropTypes.func,
+};
 
 export default Header;
