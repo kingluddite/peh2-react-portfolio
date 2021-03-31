@@ -1,5 +1,9 @@
 function Project() {
-  return <div>Project</div>;
+  return (
+    <section className="my-5">
+      <h1 className="project">Project</h1>
+    </section>
+  );
 }
 
 export default Project;
