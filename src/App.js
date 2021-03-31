@@ -7,10 +7,22 @@ import Resume from './components/Resume';
 import Footer from './components/Footer';
 
 function App() {
-  const [aboutSelected, setAboutSelected] = useState(false);
-  const [contactSelected, setContactSelected] = useState(true);
+  const [pages] = useState([
+    {
+      name: 'about',
+    },
+    { name: 'portfolio' },
+    { name: 'contact' },
+    {
+      name: 'resume',
+    },
+  ]);
+  // about page will be default
+  const [aboutSelected, setAboutSelected] = useState(true);
+  const [contactSelected, setContactSelected] = useState(false);
   const [portfolioSelected, setPortfolioSelected] = useState(false);
   const [resumeSelected, setResumeSelected] = useState(false);
+  const [currentPage, setCurrentPage] = useState(pages[0]);
 
   return (
     <div>
@@ -23,6 +35,9 @@ function App() {
         setPortfolioSelected={setPortfolioSelected}
         resumeSelected={resumeSelected}
         setResumeSelected={setResumeSelected}
+        pages={pages}
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
       />
       <main>
         {!aboutSelected ? undefined : <About />}
