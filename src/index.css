@@ -4,17 +4,39 @@ main {
   padding: 50px 30px;
 }
 :root {
-  --primary: #8c54ff;
+  --primary: #c3eded;
   --secondary: #f3a847;
   --tertiary: #b12704;
-  --light: #fafafa;
-  --dark: #000000;
+  --light: #000;
+  --dark: #d0d1cc;
   --darker: #111111;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
 }
+
+/* https://color.adobe.com/search?q=green */
+/* Color Theme Swatches in Hex */
+/* .Green--Grey-1-hex { color: #E5E5E3; } */
+/* .Green--Grey-2-hex { color: #FFFFFF; } */
+/* .Green--Grey-3-hex { color: #C3EDED; } */
+/* .Green--Grey-4-hex { color: #E5E5E3; } */
+/* .Green--Grey-5-hex { color: #D0D1CC; } */
+
+/* Color Theme Swatches in RGBA */
+/* .Green--Grey-1-rgba { color: rgba(228, 228, 226, 1); } */
+/* .Green--Grey-2-rgba { color: rgba(255, 255, 255, 1); } */
+/* .Green--Grey-3-rgba { color: rgba(195, 237, 237, 1); } */
+/* .Green--Grey-4-rgba { color: rgba(228, 228, 226, 1); } */
+/* .Green--Grey-5-rgba { color: rgba(207, 209, 204, 1); } */
+
+/* Color Theme Swatches in HSLA */
+/* .Green--Grey-1-hsla { color: hsla(60, 3, 89, 1); } */
+/* .Green--Grey-2-hsla { color: hsla(0, 0, 100, 1); } */
+/* .Green--Grey-3-hsla { color: hsla(180, 53, 84, 1); } */
+/* .Green--Grey-4-hsla { color: hsla(60, 3, 89, 1); } */
+/* .Green--Grey-5-hsla { color: hsla(72, 5, 80, 1); } */
 
 * {
   box-sizing: border-box;
@@ -34,7 +56,8 @@ body {
   letter-spacing: 0.1em;
   background: var(--dark);
   color: var(--light);
-  font-family: 'Poiret One', cursive;
+  font-family: 'Lobster', cursive;
+  /* font-family: 'Poiret One', cursive; */
 }
 
 h1,
